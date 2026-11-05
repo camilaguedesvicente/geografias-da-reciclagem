@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geografias da Reciclagem | Atlas interativo — Camila Guedes Vicente</title>
+  <meta name="description" content="Explore o Geografias da Reciclagem, atlas interativo autoral de Camila Guedes Vicente sobre dados públicos, coleta seletiva, organizações de catadores, políticas públicas e território brasileiro.">
+  <meta name="author" content="Camila Guedes Vicente">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://camilaguedesvicente.github.io/geografias-da-reciclagem/apresentacao.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Geografias da Reciclagem">
+  <meta property="og:title" content="Geografias da Reciclagem — Dados, políticas públicas e território">
+  <meta property="og:description" content="Os dados não falam sozinhos. Conheça o atlas interativo autoral de Camila Guedes Vicente e explore a reciclagem no território brasileiro.">
+  <meta property="og:url" content="https://camilaguedesvicente.github.io/geografias-da-reciclagem/apresentacao.html">
+  <meta property="og:image" content="https://camilaguedesvicente.github.io/geografias-da-reciclagem/capa-compartilhamento.jpg">
+  <meta property="og:image:secure_url" content="https://camilaguedesvicente.github.io/geografias-da-reciclagem/capa-compartilhamento.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1230">
+  <meta property="og:image:height" content="690">
+  <meta property="og:image:alt" content="Página inicial do atlas Geografias da Reciclagem, com título, autoria de Camila Guedes Vicente e convite para explorar dados públicos.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Geografias da Reciclagem — Atlas interativo">
+  <meta name="twitter:description" content="Um atlas autoral para compreender a reciclagem no território brasileiro.">
+  <meta name="twitter:image" content="https://camilaguedesvicente.github.io/geografias-da-reciclagem/capa-compartilhamento.jpg">
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #12203a;
+      --deep: #1b2a4a;
+      --slate: #5b6b87;
+      --coral: #e85b4f;
+      --peach: #f2a79c;
+      --cream: #f4efe7;
+      --paper: #fffdfa;
+      --stroke: #ded8ce;
+      --shadow: 0 20px 55px rgba(18, 32, 58, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--deep); font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--coral); outline-offset: 5px; }
+    .shell { width: min(1140px, calc(100% - 40px)); margin-inline: auto; }
+    .topbar { background: var(--paper); border-bottom: 1px solid var(--stroke); }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; min-height: 78px; padding-block: 14px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 750; letter-spacing: .01em; text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border-radius: 11px; border: 1px solid #ded9d3; background: #f9f4ef; }
+    .brand-mark svg { width: 29px; height: 29px; }
+    .top-note { color: var(--slate); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; }
+    .hero { position: relative; overflow: hidden; background: linear-gradient(120deg, #12203a 4%, #1b2a4a 73%, #283e64 110%); color: #fff; margin-top: 25px; border-radius: 24px; padding: clamp(36px, 6vw, 76px); box-shadow: var(--shadow); }
+    .hero::after { content: ""; position: absolute; width: 420px; height: 420px; right: -210px; top: -200px; border: 1px solid rgba(242,167,156,.19); border-radius: 50%; box-shadow: 0 0 0 74px rgba(242,167,156,.045), 0 0 0 145px rgba(242,167,156,.045); pointer-events: none; }
+    .hero-content { position: relative; z-index: 1; max-width: 785px; }
+    .eyebrow { color: var(--peach); text-transform: uppercase; letter-spacing: .17em; font-size: 12px; font-weight: 800; }
+    h1 { margin: 14px 0 12px; font-size: clamp(2.65rem, 6vw, 5rem); line-height: 1.04; letter-spacing: -.045em; font-weight: 850; text-wrap: balance; }
+    .hero-lead { font-size: clamp(1.2rem, 2.5vw, 1.6rem); color: var(--peach); font-weight: 700; max-width: 620px; line-height: 1.3; margin: 0 0 17px; }
+    .hero-description { max-width: 665px; font-size: 16px; line-height: 1.7; color: #e4e9f1; margin: 0 0 25px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 30px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 49px; padding: 11px 23px; border-radius: 9px; border: 1px solid transparent; font-size: 15px; font-weight: 800; text-decoration: none; transition: transform .2s, background-color .2s, border-color .2s; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--peach); color: var(--navy); border-color: #f6c4bd; }
+    .button-primary:hover { background: #ffc2b8; }
+    .button-secondary { color: white; border-color: #7e8da6; background: rgba(255,255,255,.055); }
+    .button-secondary:hover { background: rgba(255,255,255,.12); }
+    .author { border-top: 1px solid rgba(255,255,255,.19); padding-top: 20px; color: #d9e1ed; font-size: 13px; }
+    .author strong { color: white; }
+    .section { padding-top: clamp(40px, 5vw, 65px); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 12px 30px; flex-wrap: wrap; margin-bottom: 22px; }
+    .kicker { margin: 0 0 8px; color: #a33d34; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 850; }
+    h2 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.18; letter-spacing: -.03em; }
+    .section-intro { color: var(--slate); margin: 10px 0 0; max-width: 740px; }
+    .preview { overflow: hidden; background: var(--paper); border: 1px solid var(--stroke); border-radius: 18px; box-shadow: var(--shadow); }
+    .preview img { display: block; width: 100%; max-height: 615px; object-fit: cover; object-position: center top; }
+    .preview-caption { padding: 15px 20px; background: var(--paper); font-size: 13px; color: var(--slate); border-top: 1px solid var(--stroke); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--paper); border: 1px solid var(--stroke); border-radius: 16px; padding: 23px 22px 27px; }
+    .card .number { display: inline-grid; place-items: center; width: 39px; height: 39px; border-radius: 10px; color: #992d26; background: #fbe3dc; font-size: 14px; font-weight: 900; }
+    h3 { margin: 21px 0 9px; font-size: 19px; line-height: 1.25; }
+    .card p { margin: 0; font-size: 14px; color: #4b5d75; }
+    .method { margin-top: 44px; padding: clamp(24px, 4vw, 36px); border-left: 5px solid var(--coral); border-radius: 12px; background: #fffaf6; }
+    .method h2 { font-size: 22px; }
+    .method p { margin: 10px 0 0; max-width: 970px; font-size: 15px; color: #445573; }
+    .foot-callout { display: flex; flex-wrap: wrap; gap: 15px 24px; align-items: center; justify-content: space-between; margin-block: 62px 45px; padding: 30px; background: var(--deep); color: #fff; border-radius: 17px; }
+    .foot-callout h2 { font-size: 23px; }
+    .foot-callout p { margin: 7px 0 0; color: #dce4ee; font-size: 14px; }
+    footer { padding: 0 0 27px; color: var(--slate); font-size: 12px; }
+    footer .shell { border-top: 1px solid var(--stroke); padding-top: 18px; }
+    @media (max-width: 780px) {
+      .cards { grid-template-columns: 1fr; }
+      .top-note { font-size: 10px; }
+      .hero { border-radius: 16px; }
+      .preview img { max-height: 460px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="./" aria-label="Abrir o atlas Geografias da Reciclagem">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="20" rx="10" ry="17" stroke="#12203A" stroke-width="1.8" transform="rotate(33 20 20)"/>
+            <ellipse cx="20" cy="20" rx="10" ry="17" stroke="#E85B4F" stroke-width="1.8" transform="rotate(-34 20 20)"/>
+            <ellipse cx="20" cy="20" rx="10" ry="17" stroke="#5B6B87" stroke-width="1.8" transform="rotate(90 20 20)"/>
+            <circle cx="20" cy="20" r="3.2" fill="#E85B4F"/>
+          </svg>
+        </span>
+        <span>Geografias da Reciclagem</span>
+      </a>
+      <span class="top-note">Atlas interativo · Projeto autoral independente</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Cartografia interativa · Informação pública</p>
+        <h1 id="hero-title">Geografias da Reciclagem</h1>
+        <p class="hero-lead">Um atlas para compreender a reciclagem no território brasileiro.</p>
+        <p class="hero-description">Mapas, indicadores e perguntas sobre coleta seletiva, organizações de catadores, gestão de resíduos e desigualdades territoriais. Uma leitura guiada para quem trabalha com políticas públicas — e para quem quer conhecer melhor seu município.</p>
+        <div class="actions">
+          <a class="button button-primary" href="./">Explorar o Atlas completo <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#sobre">Conhecer o projeto <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="author"><strong>Autoria e direção técnica:</strong> Camila Guedes Vicente · Geógrafa</p>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Do dado à leitura territorial</p>
+          <h2 id="sobre-titulo">Os dados não falam sozinhos.</h2>
+          <p class="section-intro">O projeto torna consultáveis informações que frequentemente aparecem dispersas em bases públicas, mantendo visíveis suas fontes, recortes temporais e limitações.</p>
+        </div>
+      </div>
+      <figure class="preview">
+        <img src="mapa-compartilhamento.jpg" width="1363" height="936" loading="lazy" alt="Captura da interface do atlas: mapa do Brasil com símbolos para organizações de catadores e painel lateral com interpretação dos dados.">
+        <figcaption class="preview-caption">Prévia da interface do Atlas. Os dados e as opções de consulta estão disponíveis na ferramenta completa.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="explorar-titulo">
+      <div class="section-head">
+        <div>
+          <p class="kicker">O que você encontra</p>
+          <h2 id="explorar-titulo">Três caminhos para investigar o território</h2>
+          <p class="section-intro">Não é necessário ter experiência com mapas para começar.</p>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="number" aria-hidden="true">01</span>
+          <h3>Explorar o mapa</h3>
+          <p>Localize informações por recortes territoriais, investigue padrões e leia explicações que acompanham os indicadores.</p>
+        </article>
+        <article class="card">
+          <span class="number" aria-hidden="true">02</span>
+          <h3>Comparar e consultar municípios</h3>
+          <p>Examine tabelas, gráficos e fichas municipais para formular perguntas sobre a gestão de resíduos e a coleta seletiva.</p>
+        </article>
+        <article class="card">
+          <span class="number" aria-hidden="true">03</span>
+          <h3>Entender as fontes</h3>
+          <p>Consulte definições, períodos de referência, escolhas cartográficas e ressalvas para interpretar os dados com cuidado.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="method" aria-labelledby="metodo-titulo">
+      <h2 id="metodo-titulo">Um atlas público, autoral e em desenvolvimento</h2>
+      <p>O <em>Geografias da Reciclagem</em> é uma iniciativa independente de Camila Guedes Vicente, construída com informações de acesso público. Não constitui plataforma oficial nem substitui diagnósticos locais, verificação em campo ou avaliação de implementação de políticas públicas. Ausência de registro não significa ausência de atividade; informações autodeclaradas exigem contextualização.</p>
+    </aside>
+
+    <section class="foot-callout" aria-label="Acessar o atlas">
+      <div>
+        <h2>Que perguntas os dados permitem fazer?</h2>
+        <p>Abra a ferramenta, escolha um tema e comece a explorar.</p>
+      </div>
+      <a class="button button-primary" href="./">Acessar o Atlas <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">© 2026 Camila Guedes Vicente · Projeto autoral independente · <a href="https://github.com/camilaguedesvicente/geografias-da-reciclagem">Código e documentação no GitHub</a></div>
+  </footer>
+</body>
+</html>
